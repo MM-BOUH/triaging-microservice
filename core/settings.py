@@ -48,6 +48,11 @@ INSTALLED_APPS = [
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
+    #The whitenoise middleware is for heroku to serve static files or heroku to serve 
+     #When you deploy a Django app on Heroku, the app server doesn't 
+     # serve static files directly. Instead, you need to use a separate service like Amazon S3 
+     # or a content delivery network (CDN) to serve your static files. Alternatively, you can use a middleware like whitenoise to serve your static files directly from your app server.
+     'whitenoise.middleware.WhiteNoiseMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
