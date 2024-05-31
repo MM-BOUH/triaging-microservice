@@ -22,9 +22,7 @@ example : localhost/documentation
 [In order to update the triaging values], you can visit : DN/smart-gantt-chart-admin/
 example : localhost/smart-gantt-chart-admin/
 
-### For django credentials 
-username : gant-admin
-password : gant-admin1245
+
 
 
 ## How to do an API call to this microservice?
@@ -49,7 +47,7 @@ This endpoint should be called in order to connect with the microservice : site_
 `It is important to note that an API key has been added to this microservice. This key should be sent through the header of the request as below: `
 ```
 {
-    Authorization: "Bearer API_KEY"
+    Authorization: "..."
 }
 ```
 P.S: The bearer and the KEY would be sent privately
